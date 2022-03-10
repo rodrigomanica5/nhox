@@ -42,28 +42,28 @@ bodyMain.innerHTML = `
 
     <div id="contact">
         <div class="row">
-            <h2>Contacto</h2>
+            <h2 class="tituloContacto col-11 mx-auto">Contacto</h2>
             <form action="">
 
                 <div class="col-11 col-xl-5 mx-auto">
                     <div class="d-flex flex-column">
-                        <label for="name">Nombre y apellido:</label>
-                        <input type="text" id="name">
+                        <label for="name" class="labelForm">Nombre y apellido:</label>
+                        <input type="text" id="name" class="inputForm">
                     </div>
 
                     <div class="d-flex flex-column">
-                        <label for="email">Correo electrónico:</label>
-                        <input type="email" id="email">
+                        <label for="email" class="labelForm">Correo electrónico:</label>
+                        <input type="email" id="email" class="inputForm">
                     </div>
 
                     <div class="d-flex flex-column">
-                        <label for="tel">Telefono:</label>
-                        <input type="text" id="tel">
+                        <label for="tel" class="labelForm">Telefono:</label>
+                        <input type="text" id="tel" class="inputForm">
                     </div>
 
                     <div class="d-flex flex-column">
-                        <label for="textarea">Mensaje:</label>
-                        <textarea id="textarea" cols="30" rows="4"></textarea>
+                        <label for="textarea" class="labelForm">Mensaje:</label>
+                        <textarea id="textarea" cols="30" rows="4" class="textForm"></textarea>
                     </div>
 
                     <input type="submit" value="Enviar" class="btn botonSubmit">
