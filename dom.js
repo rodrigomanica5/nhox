@@ -65,6 +65,8 @@ bodyMain.innerHTML = `
                         <label for="textarea">Mensaje:</label>
                         <textarea id="textarea" cols="30" rows="4"></textarea>
                     </div>
+
+                    <input type="submit" value="Enviar" class="btn botonSubmit">
                 </div>
 
             </form>
