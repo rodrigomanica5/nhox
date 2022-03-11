@@ -43,7 +43,7 @@ bodyMain.innerHTML = `
     <div id="contact">
         <div class="row">
             <h2 class="tituloContacto col-11 mx-auto">Contacto</h2>
-            <form action="">
+            <form action="" class="px-0">
 
                 <div class="col-11 col-xl-5 mx-auto">
                     <div class="d-flex flex-column">
@@ -76,5 +76,8 @@ bodyMain.innerHTML = `
 
 let footer = document.getElementById("footer");
 footer.innerHTML = `
-    <h2>Y EL FOOTER</h2>
+    <div class="d-flex flex-column align-items-center justify-content-evenly">
+        <img src="./assets/img/nhoxblanco.png" alt="Logo Nhox">
+        <p><a href="#">INSTAGRAM</a> | NHOXBAGS@OUTLOOK.COM.AR</p>
+    </div>
 `;
