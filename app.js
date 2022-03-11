@@ -41,11 +41,13 @@ const setCards = () => {
     const cardCreate = document.createElement("div");
     cardCreate.classList.add("col");
     cardCreate.innerHTML = `
-      <div class="card">
+      <div class="card align-items-center">
         <img src="${p.img}" class="card-img-top" alt="img">
-        <div class="card-body">
+        <div class="card-body pb-0">
           <h5 class="card-title">${p.name}</h5>
-          <a href="#" class="btn btn-primary">ver más</a>
+          <a href="#"><div class="btnVerMas mx-auto">
+            <p>ver más</p>
+          </div></a>
         </div>
       </div>
       `;
