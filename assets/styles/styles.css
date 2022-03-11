@@ -1,3 +1,6 @@
+@import url("../fonts/CENSCBK.TTF");
+@import url("../fonts/Chathura-Regular.ttf");
+@import url("../fonts/creato_display/CreatoDisplay-Regular.otf");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -16,15 +19,28 @@
 }
 
 body {
-  background-color: #f8f7f5;
+  background-color: #F8F7F5;
+  font-family: "Creato Display", sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Century Schoolbook", sans-serif;
+  color: #5F4E4E;
 }
 
 h2 {
   font-size: 20px;
 }
 
+.offcanvas-start {
+  width: 75vw;
+}
+
 .botonSubmit {
-  background-color: #5F4E4E;
+  background-color: #D7D2D2;
   color: white;
 }
 
@@ -48,9 +64,72 @@ h2 {
   padding: 0;
 }
 
+#header nav h1 {
+  margin-bottom: 0;
+}
+
+#header nav button {
+  margin-left: 15px;
+}
+
+#products {
+  background-color: #9B9393;
+}
+
+#products .card {
+  background-color: transparent;
+  border-style: none;
+  color: #FFF;
+  text-align: center;
+}
+
+#products .card .card-title {
+  text-transform: capitalize;
+  font-size: 12px;
+}
+
+#products .card img {
+  height: 201px;
+  width: 159px;
+  border-radius: 2px;
+}
+
+#products .card .btn {
+  background-color: transparent;
+  color: #FFF;
+  border-color: #FFF;
+  border-radius: 15px;
+  font-size: 8px;
+}
+
+#about div {
+  margin: 0px 15px;
+}
+
+#about h2 {
+  margin-left: 15px;
+  color: #9B9393;
+}
+
+#about span {
+  font-style: italic;
+  font-weight: bold;
+}
+
+#about img {
+  width: 134px;
+  height: 177px;
+  margin-left: 12px;
+  border-radius: 2px;
+}
+
+#about p {
+  font-size: 10px;
+}
+
 #footer {
   height: 99px;
-  background-color: #9B9393;
+  background-color: #D7D2D2;
 }
 
 #footer img {

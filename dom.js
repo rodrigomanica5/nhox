@@ -1,15 +1,15 @@
 let header = document.getElementById("header");
 header.innerHTML = `
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
             aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#">NHOX</a>
+            <a class="navbar-brand" href="#"><h1>NHOX</h1></a>
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">NHOX</h5>
+                    <h1 class="offcanvas-title" id="offcanvasNavbarLabel">NHOX</h1>
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
@@ -29,28 +29,26 @@ header.innerHTML = `
         </div>
     </nav>
 
-    <img id="hero" class="w-100" src="https://dummyimage.com/720.jpg?text=NHOX%20BAGS" alt="test">
+    <img id="hero" class="w-100" src="./assets/img/Portada.png" alt="portada">
 `;
 
 let bodyMain = document.getElementById("main");
 bodyMain.innerHTML = `
-    <section id="about">
+    <div id="about">
         <h2>Sobre Nosotros</h2>
         <div class="d-flex">
-            <p>Hola soy <span>Celeste Larluz</span> fundadora de NHOX Bags. 
-            Este proyecto nació gracias a mi amor por la moda, y cómo esta influye en mi humor y estados de ánimo.
-            Sentía que si llevaba puesto cosas que me gustaran incentivaba mi rutina. Me daban más ganas de salir a cumplir mis obligaciones, metas, sueños y lo hacía más cálido en momentos cuando la urbanidad puede resultar pesada y nos pone a prueba.
+            <p>Hola soy <span>Celeste Larluz</span> fundadora de NHOX Bags.<br>
+            Este proyecto nació gracias a mi amor por la moda, y cómo esta influye en mi humor y estados de ánimo.<br>
+            Sentía que si llevaba puesto cosas que me gustaran incentivaba mi rutina. Me daban más ganas de salir a cumplir mis obligaciones, metas, sueños y lo hacía más cálido en momentos cuando la urbanidad puede resultar pesada y nos pone a prueba.<br>
             Fue por eso que me interesé en el diseño y decidí crear una línea de bolsos que las mujeres no se cansaran de usar en el día a día. 
             Mi objetivo es que amen y disfruten su Nhox, tanto como yo lo soy diseñando y creando cada una de ellas. 
             </p>
-            <img src="https://dummyimage.com/402x531.png?text=Foto%20perfil" alt="Celeste Larluz"/>
+            <img src="./assets/img/Celeste_Larluz.jpg" alt="Celeste Larluz"/>
         </div>
-    </section>
+    </div>
 
-    <div class="container px-4 px-lg-5 mt-5">
-        <div id="products" class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-            <!-- acá va la tarjeta de prod -->
-        </div>
+    <div id="products" class="container">
+        <div id="list" class="row pb-4 g-4 g-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"></div>
     </div>
 
     <div id="contact">

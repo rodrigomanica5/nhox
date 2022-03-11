@@ -1,3 +1,19 @@
+@import url('../fonts/CENSCBK.TTF');
+@import url('../fonts/Chathura-Regular.ttf');
+@import url('../fonts/creato_display/CreatoDisplay-Regular.otf');
+
+$font-body: 'Creato Display',
+sans-serif;
+$font-logo: 'Century Schoolbook',
+sans-serif;
+
+$c1:#F8F7F5;
+$c2:#D7D2D2;
+$c3:#9B9393;
+$c4:#5F4E4E;
+
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -15,15 +31,28 @@
 }
 
 body {
-    background-color: #f8f7f5;
+    background-color: $c1;
+    font-family: $font-body;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: $font-logo;
+    color: $c4
 }
 
 h2 {
     font-size: 20px;
 }
 
+.offcanvas-start {
+    width: 75vw;
+}
+
 .botonSubmit {
-    background-color: #5F4E4E;
+    background-color: $c2;
     color: white;
 }
 
@@ -48,9 +77,78 @@ h2 {
     padding: 0;
 }
 
+#header {
+    nav {
+        h1 {
+            margin-bottom: 0;
+        }
+
+        button {
+            margin-left: 15px;
+        }
+    }
+}
+
+#products {
+    background-color: $c3;
+
+    .card {
+        background-color: transparent;
+        border-style: none;
+        color: #FFF;
+        text-align: center;
+
+        .card-title {
+            text-transform: capitalize;
+            font-size: 12px;
+        }
+
+        img {
+            height: 201px;
+            width: 159px;
+            border-radius: 2px;
+        }
+
+        .btn {
+            background-color: transparent;
+            color: #FFF;
+            border-color: #FFF;
+            border-radius: 15px;
+            font-size: 8px;
+        }
+    }
+}
+
+#about {
+    div {
+        margin: 0px 15px;
+    }
+
+    h2 {
+        margin-left: 15px;
+        color: $c3;
+    }
+
+    span {
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    img {
+        width: 134px;
+        height: 177px;
+        margin-left: 12px;
+        border-radius: 2px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+}
+
 #footer {
     height: 99px;
-    background-color: #9B9393;
+    background-color: $c2;
 
     img {
         width: 61px;

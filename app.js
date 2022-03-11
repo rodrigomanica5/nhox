@@ -1,50 +1,56 @@
 const products = [
   {
-    name: "mochila negra charol",
-    img: "https://dummyimage.com/200.jpg?text=mochila",
+    name: "bolso cool lady",
+    img: "./assets/img/home_cool_lady.jpg",
   },
   {
-    name: "mochila negra charol",
-    img: "https://dummyimage.com/200.jpg?text=mochila",
+    name: "mochila babe rose",
+    img: "./assets/img/home_rose_babe.jpg",
   },
   {
-    name: "mochila negra charol",
-    img: "https://dummyimage.com/200.jpg?text=mochila",
+    name: "mochila cleo",
+    img: "./assets/img/home_cleo.jpg",
   },
   {
-    name: "mochila negra charol",
-    img: "https://dummyimage.com/200.jpg?text=mochila",
+    name: "mochila tender black",
+    img: "./assets/img/home_tender_black.jpg",
   },
   {
-    name: "mochila negra charol",
-    img: "https://dummyimage.com/200.jpg?text=mochila",
+    name: "mochila cobra red",
+    img: "./assets/img/home_cobra_red.jpg",
   },
   {
-    name: "mochila negra charol",
-    img: "https://dummyimage.com/200.jpg?text=mochila",
-  }
+    name: "mochila cobra green",
+    img: "./assets/img/home_cobra_green.jpg",
+  },
+  {
+    name: "mochila wheel black",
+    img: "./assets/img/home_wheel_black.jpg",
+  },
+  {
+    name: "mochila use me",
+    img: "./assets/img/home_use_her.jpg",
+  },
 ];
 
-const main = document.querySelector('#products')
+const main = document.querySelector("#list");
 
-const setCards= () =>{
-    main.innerHTML=""
-    products.forEach((p) => {
-      const cardCreate = document.createElement("div")
-      cardCreate.classList.add("col", "mb-5");
-      cardCreate.innerHTML=`
+const setCards = () => {
+  main.innerHTML = "";
+  products.forEach((p) => {
+    const cardCreate = document.createElement("div");
+    cardCreate.classList.add("col");
+    cardCreate.innerHTML = `
       <div class="card">
         <img src="${p.img}" class="card-img-top" alt="img">
         <div class="card-body">
           <h5 class="card-title">${p.name}</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Ver detalles</a>
+          <a href="#" class="btn btn-primary">ver más</a>
         </div>
       </div>
-      `
-      main.append(cardCreate)
-    }
-    )
-}
+      `;
+    main.append(cardCreate);
+  });
+};
 
 setCards();
