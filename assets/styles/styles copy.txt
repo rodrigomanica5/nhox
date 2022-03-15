@@ -13,8 +13,7 @@ $c3:#9B9393;
 $c4:#5F4E4E;
 $c5:#727272;
 
-//normaliza tamaño fuente para cuando "em" da tamaño diferente. 
-$normalize-fonts:16px;
+
 
 * {
     box-sizing: border-box;
@@ -36,33 +35,29 @@ body {
     background-color: $c1;
     font-family: $font-body;
     font-weight: 400;
+    font-size:
 }
 
-.navbar-brand {
-    font-size: $normalize-fonts;
-
-    h1 {
-        font-size: 1.875em;
-        font-weight: 400;
-        font-family: $font-logo;
-        color: $c4
-    }
+h1 {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: $font-logo;
+    color: $c4
 }
 
 h2 {
-    font-size: 1.25em;
+    font-size: 45px;
 }
 
 .offcanvas-start {
-    //seteado para que el offcanvas no ocupe toda la pantalla en mobile
     width: 75vw;
 }
 
 .tituloContacto {
     color: $c5;
     padding: 0;
-    margin-bottom: 4vh;
-    margin-top: 4.17vh;
+    margin-bottom: 42px;
+    margin-top: 68px;
 }
 
 .inputForm {
@@ -101,40 +96,8 @@ h2 {
         }
 
         button {
-            border-style: none;
+            margin-left: 15px;
         }
-    }
-
-    #hero {
-        //agregado margin y padding top de misma altura que nav para suplir el fixed-top
-        //el margin representa el tamaño de la letra que es variable
-        margin-top: 1.875em;
-        //el padding representa el tamaño fijo total de padding vertical que agrega bootstrap
-        padding-top: 2rem;
-    }
-}
-
-
-#about {
-
-    h2 {
-        color: $c3;
-    }
-
-    span {
-        font-style: italic;
-        font-weight: bold;
-    }
-
-    img {
-        border-radius: 2px;
-        width: 34vw;
-        height: calc(34vw*1.33);
-    }
-
-    p {
-        font-size: 0.625em;
-        color: black;
     }
 }
 
@@ -155,14 +118,14 @@ h2 {
 
         .card-title {
             text-transform: capitalize;
-            font-size: 0.75em;
+            font-size: 25px;
             margin-bottom: 0;
             width: auto;
         }
 
         img {
-            width: 38.46vw;
-            height: calc(38.46vw*1.266);
+            height: 347.98px;
+            width: 274.72px;
             border-radius: 2px;
         }
 
@@ -170,17 +133,52 @@ h2 {
             text-decoration: none;
 
             .btnVerMas {
+                width: 88px;
+                height: 29.66px;
                 background-color: transparent;
                 color: #FFF;
-                border: 1px solid white;
+                border: 0.5px solid white;
                 border-radius: 5px;
-                font-size: 0.5em ;
-
+                font-size: 18px;
+                margin-top: 10.19px;
+    
                 p {
                     margin-bottom: 0;
                 }
             }
         }
+    }
+}
+
+#about {
+
+    margin-top: 66px;
+    margin-bottom: 66px;
+
+    div {
+        margin: 0px 15px;
+    }
+
+    h2 {
+        color: $c3;
+    }
+
+    span {
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    // img {
+    //     width: 134px;
+    //     height: 177px;
+    //     margin-left: 12px;
+    //     border-radius: 2px;
+    // }
+
+    p {
+        font-size: 25px;
+        line-height: 29.7px;
+        color: black;
     }
 }
 
@@ -195,7 +193,7 @@ h2 {
 
     p {
         color: #F9F8F6;
-        font-size: 0.625em;
+        font-size: 30px;
         margin-bottom: 0;
 
         a {

@@ -1,6 +1,5 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -21,15 +20,18 @@ body {
   font-weight: 400;
 }
 
-h1 {
-  font-size: 30px;
+.navbar-brand {
+  font-size: 16px;
+}
+.navbar-brand h1 {
+  font-size: 1.875em;
   font-weight: 400;
   font-family: "Century Schoolbook", sans-serif;
   color: #5F4E4E;
 }
 
 h2 {
-  font-size: 45px;
+  font-size: 1.25em;
 }
 
 .offcanvas-start {
@@ -39,8 +41,8 @@ h2 {
 .tituloContacto {
   color: #727272;
   padding: 0;
-  margin-bottom: 42px;
-  margin-top: 68px;
+  margin-bottom: 4vh;
+  margin-top: 4.17vh;
 }
 
 .inputForm, .textForm {
@@ -73,9 +75,29 @@ h2 {
 #header nav h1 {
   margin-bottom: 0;
 }
-
 #header nav button {
-  margin-left: 15px;
+  border-style: none;
+}
+#header #hero {
+  margin-top: 1.875em;
+  padding-top: 2rem;
+}
+
+#about h2 {
+  color: #9B9393;
+}
+#about span {
+  font-style: italic;
+  font-weight: bold;
+}
+#about img {
+  border-radius: 2px;
+  width: 34vw;
+  height: 45.22vw;
+}
+#about p {
+  font-size: 0.625em;
+  color: black;
 }
 
 #products {
@@ -83,92 +105,54 @@ h2 {
   padding-top: 67px;
   padding-bottom: 57.34px;
 }
-
 #products h2 {
   color: white;
 }
-
 #products .card {
   background-color: transparent;
   border-style: none;
   color: #FFF;
   text-align: center;
 }
-
 #products .card .card-title {
   text-transform: capitalize;
-  font-size: 25px;
+  font-size: 0.75em;
   margin-bottom: 0;
   width: auto;
 }
-
 #products .card img {
-  height: 347.98px;
-  width: 274.72px;
+  width: 38.46vw;
+  height: 48.69036vw;
   border-radius: 2px;
 }
-
 #products .card a {
   text-decoration: none;
 }
-
 #products .card a .btnVerMas {
-  width: 88px;
-  height: 29.66px;
   background-color: transparent;
   color: #FFF;
-  border: 0.5px solid white;
+  border: 1px solid white;
   border-radius: 5px;
-  font-size: 18px;
-  margin-top: 10.19px;
+  font-size: 0.5em;
 }
-
 #products .card a .btnVerMas p {
   margin-bottom: 0;
-}
-
-#about {
-  margin-top: 66px;
-  margin-bottom: 66px;
-}
-
-#about div {
-  margin: 0px 15px;
-}
-
-#about h2 {
-  color: #9B9393;
-}
-
-#about span {
-  font-style: italic;
-  font-weight: bold;
-}
-
-#about p {
-  font-size: 25px;
-  line-height: 29.7px;
-  color: black;
 }
 
 #footer {
   height: 297px;
   background-color: #9B9393;
 }
-
 #footer img {
   width: 225.23px;
   height: 168.51px;
 }
-
 #footer p {
   color: #F9F8F6;
-  font-size: 30px;
+  font-size: 0.625em;
   margin-bottom: 0;
 }
-
 #footer p a {
   color: #F9F8F6;
   text-decoration: none;
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
