@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -20,81 +21,82 @@ body {
   font-weight: 400;
 }
 
-.navbar-brand {
-  font-size: 16px;
+body p {
+  margin: 0;
 }
-.navbar-brand h1 {
-  font-size: 1.875em;
-  font-weight: 400;
-  font-family: "Century Schoolbook", sans-serif;
-  color: #5F4E4E;
+
+body h1 {
+  font-size: 1rem;
+}
+
+.navbar .navbar-toggler:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 h2 {
+  color: #727272;
   font-size: 1.25em;
 }
 
-.offcanvas-start {
-  width: 75vw;
-}
-
-.tituloContacto {
-  color: #727272;
-  padding: 0;
-  margin-bottom: 4vh;
-  margin-top: 4.17vh;
-}
-
-.inputForm, .textForm {
+form .inputForm, form .textForm {
   border: 1px solid #727272;
   border-radius: 10px;
-  height: 42px;
+  height: 2.84vh;
   background-color: #F8F7F5;
-  margin-bottom: 23px;
+  margin-bottom: 1em;
+  font-size: 0.625em;
+  padding: 5px 5px 5px 10px;
 }
 
-.labelForm {
-  font-size: 25px;
+form .labelForm {
+  font-size: 0.625em;
   color: #727272;
-  margin-bottom: 10px;
+  margin-bottom: .25em;
 }
 
-.textForm {
-  height: 120px;
+form .textForm {
+  height: 7.82vh;
 }
 
-.botonSubmit {
+form .botonSubmit {
   background-color: #5F4E4E;
-  color: white;
-  margin-top: 45px;
-  margin-bottom: 82px;
-  width: 109px;
-  height: 45px;
+  color: #F8F7F5;
 }
 
 #header nav h1 {
   margin-bottom: 0;
 }
+
 #header nav button {
   border-style: none;
 }
+
 #header #hero {
   margin-top: 1.875em;
   padding-top: 2rem;
 }
 
+#about {
+  margin: 1em;
+}
+
 #about h2 {
   color: #9B9393;
 }
+
 #about span {
   font-style: italic;
   font-weight: bold;
 }
+
 #about img {
   border-radius: 2px;
   width: 34vw;
-  height: 45.22vw;
+  height: calc(34vw*1.33);
+  margin-left: 12px;
 }
+
 #about p {
   font-size: 0.625em;
   color: black;
@@ -102,57 +104,104 @@ h2 {
 
 #products {
   background-color: #9B9393;
-  padding-top: 67px;
-  padding-bottom: 57.34px;
 }
+
+#products a {
+  text-decoration: none;
+}
+
 #products h2 {
   color: white;
 }
+
 #products .card {
   background-color: transparent;
   border-style: none;
   color: #FFF;
   text-align: center;
 }
+
 #products .card .card-title {
   text-transform: capitalize;
   font-size: 0.75em;
   margin-bottom: 0;
   width: auto;
 }
+
 #products .card img {
-  width: 38.46vw;
-  height: 48.69036vw;
   border-radius: 2px;
 }
-#products .card a {
-  text-decoration: none;
-}
-#products .card a .btnVerMas {
+
+#products .card .btnVerMas {
   background-color: transparent;
   color: #FFF;
   border: 1px solid white;
   border-radius: 5px;
   font-size: 0.5em;
 }
-#products .card a .btnVerMas p {
+
+#products .card .btnVerMas p {
   margin-bottom: 0;
 }
 
 #footer {
-  height: 297px;
   background-color: #9B9393;
 }
+
 #footer img {
-  width: 225.23px;
-  height: 168.51px;
+  width: 15.64vw;
+  height: calc(15.64vw*0.75);
+  margin-top: 3.59vw;
+  margin-bottom: 1.79vw;
 }
+
 #footer p {
-  color: #F9F8F6;
+  color: #F8F7F5;
   font-size: 0.625em;
-  margin-bottom: 0;
+  margin-bottom: 5.64vw;
+  font-family: 'Chathura', sans-serif;
 }
+
 #footer p a {
-  color: #F9F8F6;
+  color: #F8F7F5;
   text-decoration: none;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+@media screen and (max-width: 1439px) {
+  body {
+    font-size: 16px;
+  }
+  .navbar-brand {
+    font-size: 16px;
+  }
+  .navbar-brand h1 {
+    font-size: 1.875em;
+    font-weight: 400;
+    font-family: "Century Schoolbook", sans-serif;
+    color: #5F4E4E;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    font-size: 40px;
+  }
+  .navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar .navbar-brand h1 {
+    font-size: 1.1em;
+  }
+  #about {
+    margin: 70px;
+  }
+  #about img {
+    width: 391px;
+    height: 514px;
+    margin-left: 126px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

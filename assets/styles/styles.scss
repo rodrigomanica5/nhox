@@ -1,10 +1,8 @@
-// @import url('../fonts/CENSCBK.TTF');
-// @import url('../fonts/Chathura-Regular.ttf');
-// @import url('../fonts/creato_display/CreatoDisplay-Regular.otf');
-
 $font-body: 'Creato Display',
 sans-serif;
 $font-logo: 'Century Schoolbook',
+sans-serif;
+$font-footer:'Chathura',
 sans-serif;
 
 $c1:#F8F7F5;
@@ -14,7 +12,6 @@ $c4:#5F4E4E;
 $c5:#727272;
 
 //normaliza tamaño fuente para cuando "em" da tamaño diferente. 
-$normalize-fonts:16px;
 
 * {
     box-sizing: border-box;
@@ -33,64 +30,67 @@ $normalize-fonts:16px;
 }
 
 body {
+    
     background-color: $c1;
     font-family: $font-body;
     font-weight: 400;
+
+    p {
+        margin: 0;
+    }
+    h1{
+        font-size: 1rem;
+    }
 }
 
-.navbar-brand {
-    font-size: $normalize-fonts;
-
-    h1 {
-        font-size: 1.875em;
-        font-weight: 400;
-        font-family: $font-logo;
-        color: $c4
+.navbar {
+    .navbar-toggler {
+        &:focus {
+            box-shadow: none;
+        }
     }
 }
 
 h2 {
+    color: $c5;
     font-size: 1.25em;
 }
 
-.offcanvas-start {
-    //seteado para que el offcanvas no ocupe toda la pantalla en mobile
-    width: 75vw;
-}
+// .offcanvas-start {
+//     //seteado para que el offcanvas no ocupe toda la pantalla en mobile
+//     width: 75vw;
+// }
 
-.tituloContacto {
-    color: $c5;
-    padding: 0;
-    margin-bottom: 4vh;
-    margin-top: 4.17vh;
-}
+form {
 
-.inputForm {
-    border: 1px solid $c5;
-    border-radius: 10px;
-    height: 42px;
-    background-color: $c1;
-    margin-bottom: 23px;
-}
+    .inputForm {
+        border: 1px solid $c5;
+        border-radius: 10px;
+        height: 2.84vh;
+        background-color: $c1;
+        margin-bottom: 1em;
+        font-size: 0.625em;
+        padding: 5px 5px 5px 10px;
+    }
 
-.labelForm {
-    font-size: 25px;
-    color: $c5;
-    margin-bottom: 10px;
-}
+    .labelForm {
+        font-size: 0.625em;
+        color: $c5;
+        margin-bottom: .25em;
+    }
 
-.textForm {
-    @extend .inputForm;
-    height: 120px;
-}
+    .textForm {
+        @extend .inputForm;
+        height: 7.82vh;
+    }
 
-.botonSubmit {
-    background-color: $c4;
-    color: white;
-    margin-top: 45px;
-    margin-bottom: 82px;
-    width: 109px;
-    height: 45px;
+    .botonSubmit {
+        background-color: $c4;
+        color: $c1;
+        // width: 109px;
+        // height: 45px;
+    }
+
 }
 
 #header {
@@ -116,6 +116,7 @@ h2 {
 
 
 #about {
+    margin: 1em;
 
     h2 {
         color: $c3;
@@ -130,6 +131,7 @@ h2 {
         border-radius: 2px;
         width: 34vw;
         height: calc(34vw*1.33);
+        margin-left: 12px;
     }
 
     p {
@@ -140,8 +142,10 @@ h2 {
 
 #products {
     background-color: $c3;
-    padding-top: 67px;
-    padding-bottom: 57.34px;
+
+    a {
+        text-decoration: none;
+    }
 
     h2 {
         color: white;
@@ -161,46 +165,86 @@ h2 {
         }
 
         img {
-            width: 38.46vw;
-            height: calc(38.46vw*1.266);
             border-radius: 2px;
         }
 
-        a {
-            text-decoration: none;
+        .btnVerMas {
+            background-color: transparent;
+            color: #FFF;
+            border: 1px solid white;
+            border-radius: 5px;
+            font-size: 0.5em;
 
-            .btnVerMas {
-                background-color: transparent;
-                color: #FFF;
-                border: 1px solid white;
-                border-radius: 5px;
-                font-size: 0.5em ;
-
-                p {
-                    margin-bottom: 0;
-                }
+            p {
+                margin-bottom: 0;
             }
         }
     }
 }
 
 #footer {
-    height: 297px;
     background-color: $c3;
 
     img {
-        width: 225.23px;
-        height: 168.51px;
+        width: 15.64vw;
+        height: calc(15.64vw*0.75);
+        margin-top: 3.59vw;
+        margin-bottom: 1.79vw;
     }
 
     p {
-        color: #F9F8F6;
+        color: $c1;
         font-size: 0.625em;
-        margin-bottom: 0;
+        margin-bottom: 5.64vw;
+        font-family: 'Chathura', sans-serif;
 
         a {
-            color: #F9F8F6;
+            color: $c1;
             text-decoration: none;
         }
     }
+}
+
+@media screen and (max-width:1439px) {
+    body {
+        font-size: 16px;
+    }
+
+.navbar-brand {
+    font-size: 16px;
+        h1 {
+            font-size: 1.875em;
+            font-weight: 400;
+            font-family: $font-logo;
+            color: $c4
+        }
+    }
+
+}
+
+@media screen and (min-width:1440px) {
+    body {
+        font-size: 40px;
+    }
+
+
+    .navbar {
+        flex-direction: column;
+        .navbar-brand {
+            h1 {
+                font-size: 1.1em;
+            }
+        }
+    }
+
+    #about {
+        margin: 70px;
+
+        img {
+            width: 391px;
+            height: 514px;
+            margin-left: 126px;
+        }
+    }
+
 }

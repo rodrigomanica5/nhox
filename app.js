@@ -1,5 +1,4 @@
-const products = [
-  {
+const products = [{
     name: "bolso cool lady",
     img: "./assets/img/home_cool_lady.jpg",
   },
@@ -41,16 +40,18 @@ const setCards = () => {
     const cardCreate = document.createElement("div");
     cardCreate.classList.add("col");
     cardCreate.innerHTML = `
-      <div class="card align-items-center">
+    <a href="#">
+      <div class="card w-100 align-items-center">
         <img src="${p.img}" class="card-img-top" alt="img">
-        <div class="card-body pb-0">
+        <div class="card-body align-items-center">
           <h5 class="card-title">${p.name}</h5>
-          <a href="#"><div class="btnVerMas mx-auto">
-            <p>ver más</p>
-          </div></a>
+        </div>
+        <div class="btnVerMas mx-auto">
+            <p class="px-1">ver más</p>
         </div>
       </div>
-      `;
+    </a>
+    `;
     main.append(cardCreate);
   });
 };

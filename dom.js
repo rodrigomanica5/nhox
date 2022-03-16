@@ -1,12 +1,11 @@
 let header = document.getElementById("header");
 header.innerHTML = `
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
+    <nav class="navbar fixed-top navbar-expand-xxl navbar-light bg-light">
             <button class="navbar-toggler ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
             aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#"><h1>NHOX</h1></a>
+            <a class="navbar-brand ms-3" href="#"><h1>NHOX</h1></a>
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                     <h1 class="offcanvas-title" id="offcanvasNavbarLabel">NHOX</h1>
@@ -26,7 +25,6 @@ header.innerHTML = `
                     </ul>
                 </div>
             </div>
-        </div>
     </nav>
 
     <img id="hero" class="w-100" src="./assets/img/Portada.png" alt="portada">
@@ -34,8 +32,8 @@ header.innerHTML = `
 
 let bodyMain = document.getElementById("main");
 bodyMain.innerHTML = `
-    <div id="about" class="d-flex m-3">
-        <div class="d-flex flex-column me-2">
+    <div id="about" class="d-flex">
+        <div class="d-flex flex-column">
             <h2>Sobre Nosotros</h2>
             <p>Hola soy <span>Celeste Larluz</span> fundadora de NHOX Bags.<br>
             Este proyecto nació gracias a mi amor por la moda, y cómo esta influye en mi humor y estados de ánimo.<br>
@@ -47,17 +45,19 @@ bodyMain.innerHTML = `
         <img src="./assets/img/Celeste_Larluz.jpg" alt="Celeste Larluz" class="align-self-center"/>
     </div>
 
-    <div id="products" class="row">
-        <h2 class="col-xl-11 mx-auto px-0">Productos</h2>
-        <div id="list" class="row g-4 g-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"></div>
+    <div id="products" class="py-3">
+        
+    <h2 class="ps-3">Productos</h2>
+        <div id="list" class="row g-4 g-lg-5 row-cols-2 row-cols-xxl-4 justify-content-center">
+        </div>
     </div>
 
-    <div id="contact">
+    <div id="contact" class="my-4">
         <div class="row">
             <form action="" class="px-0">
-                <h2 class="tituloContacto col-7 mx-auto">Contacto</h2>
+                <h2 class="ms-3">Contacto</h2>
 
-                <div class="col-11 col-xl-7 mx-auto">
+                <div class="col-11 col-xxl-6 mx-auto">
                     <div class="d-flex flex-column">
                         <label for="name" class="labelForm">Nombre y apellido:</label>
                         <input type="text" id="name" class="inputForm">
@@ -88,8 +88,8 @@ bodyMain.innerHTML = `
 
 let footer = document.getElementById("footer");
 footer.innerHTML = `
-    <div class="d-flex flex-column align-items-center justify-content-evenly">
+    <div class="d-flex flex-column align-items-center">
         <img src="./assets/img/nhoxblanco.png" alt="Logo Nhox">
-        <p><a href="#">INSTAGRAM</a> | NHOXBAGS@OUTLOOK.COM.AR</p>
+        <p><a href="#">INSTAGRAM</a> | <a href="mailto:nhoxbags@outlook.com.ar">NHOXBAGS@OUTLOOK.COM.AR</a></p>
     </div>
 `;
