@@ -45,19 +45,19 @@ bodyMain.innerHTML = `
         <img src="./assets/img/Celeste_Larluz.jpg" alt="Celeste Larluz" class="align-self-center"/>
     </div>
 
-    <div id="products" class="py-3">
+    <div id="products">
         
     <h2 class="ps-3">Productos</h2>
         <div id="list" class="row g-4 g-lg-5 row-cols-2 row-cols-xxl-4 justify-content-center">
         </div>
     </div>
 
-    <div id="contact" class="my-4">
+    <div id="contact">
         <div class="row">
             <form action="" class="px-0">
-                <h2 class="ms-3">Contacto</h2>
-
-                <div class="col-11 col-xxl-6 mx-auto">
+            
+                <div class="col-11 col-xxl-7 mx-auto">
+                    <h2>Contacto</h2>
                     <div class="d-flex flex-column">
                         <label for="name" class="labelForm">Nombre y apellido:</label>
                         <input type="text" id="name" class="inputForm">

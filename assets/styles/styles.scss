@@ -43,14 +43,6 @@ body {
     }
 }
 
-.navbar {
-    .navbar-toggler {
-        &:focus {
-            box-shadow: none;
-        }
-    }
-}
-
 h2 {
     color: $c5;
     font-size: 1.25em;
@@ -61,14 +53,14 @@ h2 {
 //     width: 75vw;
 // }
 
-form {
-
+#contact {
+    margin: 5% 0;
     .inputForm {
         border: 1px solid $c5;
         border-radius: 10px;
-        height: 2.84vh;
+        height: 5%;
         background-color: $c1;
-        margin-bottom: 1em;
+        margin-bottom: 4%;
         font-size: 0.625em;
         padding: 5px 5px 5px 10px;
     }
@@ -76,28 +68,40 @@ form {
     .labelForm {
         font-size: 0.625em;
         color: $c5;
-        margin-bottom: .25em;
+        margin-bottom: 1%;
     }
 
     .textForm {
         @extend .inputForm;
-        height: 7.82vh;
+        height: 20%;
     }
 
     .botonSubmit {
         background-color: $c4;
         color: $c1;
+        font-size: 0.625em;
         // width: 109px;
         // height: 45px;
     }
 
 }
+.navbar-brand {
+    h1 {
+        margin-bottom: 0;
+        font-weight: 400;
+        font-family: $font-logo;
+        color: $c4
+    }
+}
 
 #header {
     nav {
-
-        h1 {
-            margin-bottom: 0;
+        .navbar {
+            .navbar-toggler {
+                &:focus {
+                    box-shadow: none;
+                }
+            }
         }
 
         button {
@@ -116,7 +120,7 @@ form {
 
 
 #about {
-    margin: 1em;
+    margin: 4.4%;
 
     h2 {
         color: $c3;
@@ -131,7 +135,7 @@ form {
         border-radius: 2px;
         width: 34vw;
         height: calc(34vw*1.33);
-        margin-left: 12px;
+        margin-left: 4%;
     }
 
     p {
@@ -142,19 +146,20 @@ form {
 
 #products {
     background-color: $c3;
+    padding: 5.4% 4%;
 
     a {
         text-decoration: none;
     }
 
     h2 {
-        color: white;
+        color: $c1;
     }
 
     .card {
         background-color: transparent;
         border-style: none;
-        color: #FFF;
+        color: $c1;
         text-align: center;
 
         .card-title {
@@ -170,8 +175,8 @@ form {
 
         .btnVerMas {
             background-color: transparent;
-            color: #FFF;
-            border: 1px solid white;
+            color: $c1;
+            border: 1px solid $c1;
             border-radius: 5px;
             font-size: 0.5em;
 
@@ -210,27 +215,28 @@ form {
         font-size: 16px;
     }
 
-.navbar-brand {
-    font-size: 16px;
-        h1 {
-            font-size: 1.875em;
-            font-weight: 400;
-            font-family: $font-logo;
-            color: $c4
-        }
+    .offcanvas-start{
+        width:75vw;
     }
 
+    .navbar-brand {
+        font-size: 16px;
+        h1 {
+            font-size: 1.875em;
+        }
+    }
 }
+
 
 @media screen and (min-width:1440px) {
     body {
         font-size: 40px;
     }
 
-
     .navbar {
         flex-direction: column;
         .navbar-brand {
+            font-size: 40px;
             h1 {
                 font-size: 1.1em;
             }
@@ -238,12 +244,10 @@ form {
     }
 
     #about {
-        margin: 70px;
 
         img {
             width: 391px;
             height: 514px;
-            margin-left: 126px;
         }
     }
 

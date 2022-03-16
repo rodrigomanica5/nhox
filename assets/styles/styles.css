@@ -29,43 +29,51 @@ body h1 {
   font-size: 1rem;
 }
 
-.navbar .navbar-toggler:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
 h2 {
   color: #727272;
   font-size: 1.25em;
 }
 
-form .inputForm, form .textForm {
+#contact {
+  margin: 5% 0;
+}
+
+#contact .inputForm, #contact .textForm {
   border: 1px solid #727272;
   border-radius: 10px;
-  height: 2.84vh;
+  height: 5%;
   background-color: #F8F7F5;
-  margin-bottom: 1em;
+  margin-bottom: 4%;
   font-size: 0.625em;
   padding: 5px 5px 5px 10px;
 }
 
-form .labelForm {
+#contact .labelForm {
   font-size: 0.625em;
   color: #727272;
-  margin-bottom: .25em;
+  margin-bottom: 1%;
 }
 
-form .textForm {
-  height: 7.82vh;
+#contact .textForm {
+  height: 20%;
 }
 
-form .botonSubmit {
+#contact .botonSubmit {
   background-color: #5F4E4E;
   color: #F8F7F5;
+  font-size: 0.625em;
 }
 
-#header nav h1 {
+.navbar-brand h1 {
   margin-bottom: 0;
+  font-weight: 400;
+  font-family: "Century Schoolbook", sans-serif;
+  color: #5F4E4E;
+}
+
+#header nav .navbar .navbar-toggler:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 #header nav button {
@@ -78,7 +86,7 @@ form .botonSubmit {
 }
 
 #about {
-  margin: 1em;
+  margin: 4.4%;
 }
 
 #about h2 {
@@ -94,7 +102,7 @@ form .botonSubmit {
   border-radius: 2px;
   width: 34vw;
   height: calc(34vw*1.33);
-  margin-left: 12px;
+  margin-left: 4%;
 }
 
 #about p {
@@ -104,6 +112,7 @@ form .botonSubmit {
 
 #products {
   background-color: #9B9393;
+  padding: 5.4% 4%;
 }
 
 #products a {
@@ -111,13 +120,13 @@ form .botonSubmit {
 }
 
 #products h2 {
-  color: white;
+  color: #F8F7F5;
 }
 
 #products .card {
   background-color: transparent;
   border-style: none;
-  color: #FFF;
+  color: #F8F7F5;
   text-align: center;
 }
 
@@ -134,8 +143,8 @@ form .botonSubmit {
 
 #products .card .btnVerMas {
   background-color: transparent;
-  color: #FFF;
-  border: 1px solid white;
+  color: #F8F7F5;
+  border: 1px solid #F8F7F5;
   border-radius: 5px;
   font-size: 0.5em;
 }
@@ -171,14 +180,14 @@ form .botonSubmit {
   body {
     font-size: 16px;
   }
+  .offcanvas-start {
+    width: 75vw;
+  }
   .navbar-brand {
     font-size: 16px;
   }
   .navbar-brand h1 {
     font-size: 1.875em;
-    font-weight: 400;
-    font-family: "Century Schoolbook", sans-serif;
-    color: #5F4E4E;
   }
 }
 
@@ -192,16 +201,15 @@ form .botonSubmit {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .navbar .navbar-brand {
+    font-size: 40px;
+  }
   .navbar .navbar-brand h1 {
     font-size: 1.1em;
-  }
-  #about {
-    margin: 70px;
   }
   #about img {
     width: 391px;
     height: 514px;
-    margin-left: 126px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
