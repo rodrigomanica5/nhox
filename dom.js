@@ -46,7 +46,7 @@ header.innerHTML = `
 
 let bodyMain = document.getElementById("main");
 bodyMain.innerHTML = `
-    <div id="about" class="d-flex">
+    <div id="about" class="d-flex" data-aos="fade-up" data-aos-duration="500">
         <div class="d-flex flex-column">
             <h2>Sobre Nosotros</h2>
             <p>Hola soy <span>Celeste Larluz</span> fundadora de NHOX Bags.<br>
@@ -68,28 +68,28 @@ bodyMain.innerHTML = `
 
     <div id="contact">
         <div class="row">
-            <form method="POST" action='enviar.php' class="px-0">
+            <form action="https://formsubmit.co/celestelarlux@gmail.com" method="POST" class="px-0">
             
                 <div class="col-11 col-xxl-7 mx-auto">
                     <h2>Contacto</h2>
                     <div class="d-flex flex-column">
                         <label for="name" class="labelForm">Nombre y apellido:</label>
-                        <input type="text" id="name" placeholder="nombre..." class="inputForm" required>
+                        <input type="text" id="name" class="inputForm" name="name" required>
                     </div>
 
                     <div class="d-flex flex-column">
                         <label for="email" class="labelForm">Correo electrónico:</label>
-                        <input type="email" id="email" placeholder="email..." class="inputForm" required>
+                        <input type="email" id="email" class="inputForm" name="email" required>
                     </div>
 
                     <div class="d-flex flex-column">
                         <label for="tel" class="labelForm">Telefono:</label>
-                        <input type="text" id="tel" placeholder="teléfono..." class="inputForm">
+                        <input type="text" id="tel" class="inputForm" name="telephone">
                     </div>
 
                     <div class="d-flex flex-column">
                         <label for="textarea" class="labelForm">Mensaje:</label>
-                        <textarea id="textarea" cols="30" rows="4" class="textForm"></textarea>
+                        <textarea id="textarea" cols="30" rows="4" class="textForm" name="message" required></textarea>
                     </div>
 
                     <input type="submit" value="Enviar" class="btn botonSubmit">
