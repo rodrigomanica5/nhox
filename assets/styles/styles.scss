@@ -11,8 +11,6 @@ $c3:#9B9393;
 $c4:#5F4E4E;
 $c5:#727272;
 
-//normaliza tamaño fuente para cuando "em" da tamaño diferente. 
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -48,10 +46,6 @@ h2 {
     font-size: 1.25em;
 }
 
-// .offcanvas-start {
-//     //seteado para que el offcanvas no ocupe toda la pantalla en mobile
-//     width: 75vw;
-// }
 
 #contact {
     margin: 5% 0;

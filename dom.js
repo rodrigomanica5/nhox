@@ -6,7 +6,7 @@ header.innerHTML = `
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand ms-3" href="#"><h1>NHOX</h1></a>
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas offcanvas-start col-12" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                     <h1 class="offcanvas-title" id="offcanvasNavbarLabel">NHOX</h1>
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
