@@ -31,7 +31,7 @@ body {
 
     background-color: $c1;
     font-family: $font-body;
-    font-weight: 400;
+    font-weight: 100;
 
     p {
         margin: 0;
@@ -42,14 +42,163 @@ body {
     }
 }
 
+ul{
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
 h2 {
     color: $c5;
-    font-size: 1.25em;
+    font-size: 1.1em;
 }
 
 
+
+.navbar-brand {
+    h1 {
+        margin-bottom: 0;
+        font-family: $font-logo;
+        color: $c4
+    }
+}
+
+#header {
+    nav {
+        .offcanvas{
+            background-color: $c2;
+        }
+        .offcanvas-title{
+            font-size: 2em;
+            font-family: $font-logo;
+            color: $c3;
+        }
+        .offcanvas-footer{
+            
+            img {
+                width: 15.64vw;
+                height: calc(15.64vw*0.75);
+                margin-top: 2.3%;
+                margin-bottom: 2.4%;
+            }
+        }
+        button {
+            border-style: none;
+            
+            &:focus {
+                box-shadow: none;
+            }
+        }
+        // #hero {
+            //     //agregado margin y padding top de misma altura que nav para suplir el fixed-top
+            //     //el margin representa el tamaño de la letra que es variable
+            //     margin-top: 1.875em;
+            //     // el padding representa el tamaño fijo total de padding vertical que agrega bootstrap
+            //     padding-top: 2rem;
+            // }
+        }
+}
+
+#about {
+    margin: 4.4%;
+    
+    h2 {
+        color: $c3;
+        margin-bottom: 5%;
+    }
+
+    span {
+        font-style: italic;
+        font-weight: bold;
+    }
+    
+    img {
+        border-radius: 2px;
+        width: 34vw;
+        height: calc(34vw*1.33);
+        margin-left: 4%;
+    }
+    
+    p {
+        font-size: 0.625em;
+        color: black;
+    }
+}
+
+#products {
+    background-color: $c3;
+    padding: 4.4% 4%;
+    
+    a {
+        text-decoration: none;
+    }
+
+    h2 {
+        color: $c1;
+        padding-left: 12px;
+        margin-bottom: 0;
+    }
+    
+    .card {
+        background-color: transparent;
+        border-style: none;
+        color: $c1;
+        text-align: center;
+        
+        .card-body {
+            padding-right: 0;
+            padding-left: 0;
+        }
+
+        .card-title {
+            text-transform: capitalize;
+            font-size: 0.6em;
+            margin-bottom: 0;
+            width: auto;
+        }
+        
+        img {
+            border-radius: 2px;
+        }
+        
+        .btnVerMas {
+            background-color: transparent;
+            color: $c1;
+            border: 1px solid $c1;
+            border-radius: 5px;
+            font-size: 0.5em;
+            
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+#footer {
+    background-color: $c3;
+    
+    img {
+        width: 15.64vw;
+        height: calc(15.64vw*0.75);
+        margin-top: 2.3%;
+        margin-bottom: 2.4%;
+    }
+    
+    p {
+        color: $c1;
+        font-size: 0.625em;
+        margin-bottom: 3%;
+        font-family: 'Chathura', sans-serif;
+        
+        a {
+            color: $c1;
+            text-decoration: none;
+        }
+    }
+}
+
 #contact {
-    margin: 5% 0;
+    margin: 4.8% 0 5.7% 0;
 
     .inputForm {
         border: 1px solid $c5;
@@ -76,135 +225,28 @@ h2 {
         background-color: $c4;
         color: $c1;
         font-size: 0.625em;
-        // width: 109px;
-        // height: 45px;
     }
 
 }
 
-.navbar-brand {
-    h1 {
-        margin-bottom: 0;
-        font-weight: 400;
-        font-family: $font-logo;
-        color: $c4
-    }
-}
-
-#header {
-    nav {
-        button {
-            border-style: none;
-
-            &:focus {
-                box-shadow: none;
-            }
-        }
-    }
-
-    #hero {
-        //agregado margin y padding top de misma altura que nav para suplir el fixed-top
-        //el margin representa el tamaño de la letra que es variable
-        margin-top: 1.875em;
-        //el padding representa el tamaño fijo total de padding vertical que agrega bootstrap
-        padding-top: 2rem;
-    }
+#toTop{
+    background-color: $c5;
+    font-size: .5em;
+    border-radius: 2px;
+    text-align: center;
+    border: 2px solid $c2;
+    color: $c1;
+    padding: 1%;
+    display: none;
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    z-index: 1100;
+    cursor: pointer;
 }
 
 
-#about {
-    margin: 4.4%;
-
-    h2 {
-        color: $c3;
-    }
-
-    span {
-        font-style: italic;
-        font-weight: bold;
-    }
-
-    img {
-        border-radius: 2px;
-        width: 34vw;
-        height: calc(34vw*1.33);
-        margin-left: 4%;
-    }
-
-    p {
-        font-size: 0.625em;
-        color: black;
-    }
-}
-
-#products {
-    background-color: $c3;
-    padding: 5.4% 4%;
-
-    a {
-        text-decoration: none;
-    }
-
-    h2 {
-        color: $c1;
-        padding-left: 12px;
-    }
-
-    .card {
-        background-color: transparent;
-        border-style: none;
-        color: $c1;
-        text-align: center;
-
-        .card-title {
-            text-transform: capitalize;
-            font-size: 0.75em;
-            margin-bottom: 0;
-            width: auto;
-        }
-
-        img {
-            border-radius: 2px;
-        }
-
-        .btnVerMas {
-            background-color: transparent;
-            color: $c1;
-            border: 1px solid $c1;
-            border-radius: 5px;
-            font-size: 0.5em;
-
-            p {
-                margin-bottom: 0;
-            }
-        }
-    }
-}
-
-#footer {
-    background-color: $c3;
-
-    img {
-        width: 15.64vw;
-        height: calc(15.64vw*0.75);
-        margin-top: 2.3%;
-        margin-bottom: 2.4%;
-    }
-
-    p {
-        color: $c1;
-        font-size: 0.625em;
-        margin-bottom: 3%;
-        font-family: 'Chathura', sans-serif;
-
-        a {
-            color: $c1;
-            text-decoration: none;
-        }
-    }
-}
-
-@media screen and (max-width:1439px) {
+@media screen and (max-width:1399px) {
     body {
         font-size: 16px;
     }
@@ -229,7 +271,7 @@ h2 {
 }
 
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1400px) {
     body {
         font-size: 40px;
     }
@@ -245,15 +287,27 @@ h2 {
             }
 
             h2 {
-                font-size: .4em;
+                font-size: .3em;
             }
         }
 
         .tabs {
             display: flex;
             flex-direction: row;
-
-            li {}
+            ul{
+                padding-left: 0;
+            }
+            li {
+                font-size: .5em;
+                a{
+                    text-decoration: none;
+                    color:$c4;
+                }
+                span{
+                    color:$c4;
+                }
+                list-style: none;
+            }
         }
 
         .offcanvas-start {

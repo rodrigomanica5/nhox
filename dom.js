@@ -1,24 +1,22 @@
 let header = document.getElementById("header");
 header.innerHTML = `
-    <nav class="navbar fixed-top navbar-expand-xxl navbar-light bg-light">
+    <nav class="navbar sticky-top navbar-expand-xxl navbar-light bg-light">
             <button class="navbar-toggler ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
             aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand ms-3" href="#"><h1>NHOX</h1></a>
-                <div>
-                    <ul class="tabs">
-                        <li>
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="#products">Productos</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="#contact">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
+            <ul class="tabs">
+                <li class="d-flex align-items-center">
+                    <a class="nav-link" href="#about">SOBRE NOSOTROS</a> <span> | </span>
+                </li>
+                <li class="d-flex align-items-center">
+                    <a class="nav-link" href="#products">PRODUCTOS</a> <span> | </span>
+                </li>
+                <li class="d-flex align-items-center">
+                    <a class="nav-link" href="#contact">CONTACTO</a>
+                </li>
+            </ul>
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                     <h1 class="offcanvas-title" id="offcanvasNavbarLabel">NHOX</h1>
@@ -27,15 +25,18 @@ header.innerHTML = `
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" href="#about">SOBRE NOSOTROS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#products">Productos</a>
+                            <a class="nav-link" href="#products">PRODUCTOS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contacto</a>
+                            <a class="nav-link" href="#contact">CONTACTO</a>
                         </li>
                     </ul>
+                </div>
+                <div class="offcanvas-footer mx-auto mb-3">
+                    <img src="assets/img/logo_nhox_marron.png" alt="logoNhox" />
                 </div>
             </div>
     </nav>
@@ -106,3 +107,16 @@ footer.innerHTML = `
         <p><a href="#">INSTAGRAM</a> | <a href="mailto:nhoxbags@outlook.com.ar">NHOXBAGS@OUTLOOK.COM.AR</a></p>
     </div>
 `;
+const toTopButton = document.getElementById("toTop");
+
+const showButton = () => {
+    if (document.documentElement.scrollTop > 800) {
+        toTopButton.style.display = "block";
+    } else {
+        toTopButton.style.display = "none";
+    }
+}
+
+window.onscroll = () => showButton();
+
+toTopButton.addEventListener('click', () => document.documentElement.scrollTop = 0)
