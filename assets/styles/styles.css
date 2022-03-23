@@ -71,12 +71,12 @@ h2 {
   color: #5F4E4E;
 }
 
-#header nav .navbar .navbar-toggler:focus {
+#header nav .navbar .navbar-toggler:focus .navbar-toggler-icon {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-#header nav button {
+#header button {
   border-style: none;
 }
 
@@ -128,6 +128,11 @@ h2 {
   border-style: none;
   color: #F8F7F5;
   text-align: center;
+}
+
+#products .card .card-body {
+  padding-right: 0;
+  padding-left: 0;
 }
 
 #products .card .card-title {

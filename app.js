@@ -47,7 +47,7 @@ const setCards = () => {
           <h5 class="card-title">${p.name}</h5>
         </div>
         <div class="btnVerMas mx-auto">
-            <p class="px-1">ver más</p>
+            <p class="px-2">ver más</p>
         </div>
       </div>
     </a>

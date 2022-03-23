@@ -91,17 +91,17 @@ h2 {
 #header {
     nav {
         .navbar {
-            .navbar-toggler {
-                &:focus {
+            .navbar-toggler:focus {
+                .navbar-toggler-icon {
                     box-shadow: none;
                 }
+            }
             }
         }
 
         button {
             border-style: none;
         }
-    }
 
     #hero {
         //agregado margin y padding top de misma altura que nav para suplir el fixed-top
@@ -155,6 +155,11 @@ h2 {
         border-style: none;
         color: $c1;
         text-align: center;
+
+        .card-body {
+            padding-right: 0;
+            padding-left: 0;
+        }
 
         .card-title {
             text-transform: capitalize;
