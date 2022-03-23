@@ -1,6 +1,6 @@
 const products = [{
     id:"1",
-    name: "bolso cool lady",
+    name: "Bolso Cool Lady",
     img: "./assets/img/home_cool_lady.jpg",
     carrImg:"assets/img/Carr_cool_lady",
     color: "nude",
@@ -10,7 +10,7 @@ const products = [{
   },
   {
     id:"2",
-    name: "mochila babe rose",
+    name: "Mochila Babe Rose",
     img: "./assets/img/home_rose_babe.jpg",
     carrImg:"assets/img/Carr_babe_rose",
     color: "nude",
@@ -20,7 +20,7 @@ const products = [{
   },
   {
     id:"3",
-    name: "mochila cleo",
+    name: "Mochila Cleo",
     img: "./assets/img/home_cleo.jpg",
     carrImg:"assets/img/Carr_cleo",
     color: "celeste y nude",
@@ -30,7 +30,7 @@ const products = [{
   },
   {
     id:"4",
-    name: "mochila tender black",
+    name: "Mochila Tender Black",
     img: "./assets/img/home_tender_black.jpg",
     carrImg:"assets/img/Carr_tender_black",
     color: "black",
@@ -40,7 +40,7 @@ const products = [{
   },
   {
     id:"5",
-    name: "mochila cobra red",
+    name: "Mochila Cobra Red",
     img: "./assets/img/home_cobra_red.jpg",
     carrImg:"assets/img/Carr_cobra_red",
     color: "red",
@@ -50,7 +50,7 @@ const products = [{
   },
   {
     id:"6",
-    name: "mochila cobra green",
+    name: "Mochila Cobra Green",
     img: "./assets/img/home_cobra_green.jpg",
     carrImg:"assets/img/Carr_cobra_green",
     color: "green",
@@ -60,7 +60,7 @@ const products = [{
   },
   {
     id:"7",
-    name: "mochila wheel black",
+    name: "Mochila Wheel Black",
     img: "./assets/img/home_wheel_black.jpg",
     carrImg:"assets/img/Carr_wheel_black",
     color: "black",
@@ -70,7 +70,7 @@ const products = [{
   },
   {
     id:"8",
-    name: "mochila use me",
+    name: "Mochila Use Me",
     img: "./assets/img/home_use_her.jpg",
     carrImg:"assets/img/Carr_use_me",
     color: "negro",
@@ -85,6 +85,8 @@ const main = document.querySelector("#list");
 const setCards = () => {
   main.innerHTML = "";
   products.forEach((p) => {
+    const joinedName = p.name.split(' ').join('%20')
+    console.log(joinedName)
     const cardCreate = document.createElement("div");
     cardCreate.classList.add("col");
     cardCreate.innerHTML = `
@@ -135,7 +137,7 @@ const setCards = () => {
                       <div class="modal-detalles">
                         <h2>${p.name}</h2>
                         <p>Color: ${p.color}</p>
-                        <button>Consultar por este producto</button>
+                        <button><a href="https://api.whatsapp.com/send?phone=541130876630&text=¡Hola%20Nhox!%20¿Qué%20tal?%20Quería%20consultarte%20por:%20¡${joinedName}!">Consultar por este producto</a></button>
                         <p>DESCRIPCIÓN:<br>${p.description}</p>
                         <p>MEDIDAS:<br>${p.size}</p>
                         <p>MATERIAL:<br>${p.materials}</p>

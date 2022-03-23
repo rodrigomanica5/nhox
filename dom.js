@@ -68,23 +68,23 @@ bodyMain.innerHTML = `
 
     <div id="contact">
         <div class="row">
-            <form action="" class="px-0">
+            <form method="POST" action='enviar.php' class="px-0">
             
                 <div class="col-11 col-xxl-7 mx-auto">
                     <h2>Contacto</h2>
                     <div class="d-flex flex-column">
                         <label for="name" class="labelForm">Nombre y apellido:</label>
-                        <input type="text" id="name" class="inputForm">
+                        <input type="text" id="name" placeholder="nombre..." class="inputForm" required>
                     </div>
 
                     <div class="d-flex flex-column">
                         <label for="email" class="labelForm">Correo electrónico:</label>
-                        <input type="email" id="email" class="inputForm">
+                        <input type="email" id="email" placeholder="email..." class="inputForm" required>
                     </div>
 
                     <div class="d-flex flex-column">
                         <label for="tel" class="labelForm">Telefono:</label>
-                        <input type="text" id="tel" class="inputForm">
+                        <input type="text" id="tel" placeholder="teléfono..." class="inputForm">
                     </div>
 
                     <div class="d-flex flex-column">
