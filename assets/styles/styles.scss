@@ -28,7 +28,7 @@ $c5:#727272;
 }
 
 body {
-    
+
     background-color: $c1;
     font-family: $font-body;
     font-weight: 400;
@@ -36,7 +36,8 @@ body {
     p {
         margin: 0;
     }
-    h1{
+
+    h1 {
         font-size: 1rem;
     }
 }
@@ -49,6 +50,7 @@ h2 {
 
 #contact {
     margin: 5% 0;
+
     .inputForm {
         border: 1px solid $c5;
         border-radius: 10px;
@@ -79,6 +81,7 @@ h2 {
     }
 
 }
+
 .navbar-brand {
     h1 {
         margin-bottom: 0;
@@ -90,16 +93,12 @@ h2 {
 
 #header {
     nav {
-        .navbar {
-            .navbar-toggler {
-                &:focus {
-                    box-shadow: none;
-                }
-            }
-        }
-
         button {
             border-style: none;
+
+            &:focus {
+                box-shadow: none;
+            }
         }
     }
 
@@ -148,6 +147,7 @@ h2 {
 
     h2 {
         color: $c1;
+        padding-left: 12px;
     }
 
     .card {
@@ -187,14 +187,14 @@ h2 {
     img {
         width: 15.64vw;
         height: calc(15.64vw*0.75);
-        margin-top: 3.59vw;
-        margin-bottom: 1.79vw;
+        margin-top: 2.3%;
+        margin-bottom: 2.4%;
     }
 
     p {
         color: $c1;
         font-size: 0.625em;
-        margin-bottom: 5.64vw;
+        margin-bottom: 3%;
         font-family: 'Chathura', sans-serif;
 
         a {
@@ -209,12 +209,19 @@ h2 {
         font-size: 16px;
     }
 
-    .offcanvas-start{
-        width:75vw;
+    .offcanvas-start {
+        width: 75vw;
+    }
+
+    .navbar {
+        .tabs {
+            display: none;
+        }
     }
 
     .navbar-brand {
         font-size: 16px;
+
         h1 {
             font-size: 1.875em;
         }
@@ -229,11 +236,34 @@ h2 {
 
     .navbar {
         flex-direction: column;
+
         .navbar-brand {
             font-size: 40px;
+
             h1 {
                 font-size: 1.1em;
             }
+
+            h2 {
+                font-size: .4em;
+            }
+        }
+
+        .tabs {
+            display: flex;
+            flex-direction: row;
+
+            li {}
+        }
+
+        .offcanvas-start {
+            display: none;
+        }
+    }
+
+    #products {
+        h2 {
+            padding-left: 24px;
         }
     }
 

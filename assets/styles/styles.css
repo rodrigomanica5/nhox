@@ -71,13 +71,13 @@ h2 {
   color: #5F4E4E;
 }
 
-#header nav .navbar .navbar-toggler:focus {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
 #header nav button {
   border-style: none;
+}
+
+#header nav button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 #header #hero {
@@ -121,6 +121,7 @@ h2 {
 
 #products h2 {
   color: #F8F7F5;
+  padding-left: 12px;
 }
 
 #products .card {
@@ -160,14 +161,14 @@ h2 {
 #footer img {
   width: 15.64vw;
   height: calc(15.64vw*0.75);
-  margin-top: 3.59vw;
-  margin-bottom: 1.79vw;
+  margin-top: 2.3%;
+  margin-bottom: 2.4%;
 }
 
 #footer p {
   color: #F8F7F5;
   font-size: 0.625em;
-  margin-bottom: 5.64vw;
+  margin-bottom: 3%;
   font-family: 'Chathura', sans-serif;
 }
 
@@ -182,6 +183,9 @@ h2 {
   }
   .offcanvas-start {
     width: 75vw;
+  }
+  .navbar .tabs {
+    display: none;
   }
   .navbar-brand {
     font-size: 16px;
@@ -206,6 +210,24 @@ h2 {
   }
   .navbar .navbar-brand h1 {
     font-size: 1.1em;
+  }
+  .navbar .navbar-brand h2 {
+    font-size: .4em;
+  }
+  .navbar .tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .navbar .offcanvas-start {
+    display: none;
+  }
+  #products h2 {
+    padding-left: 24px;
   }
   #about img {
     width: 391px;
