@@ -42,7 +42,7 @@ body {
     }
 }
 
-ul{
+ul {
     margin-bottom: 0;
     padding-left: 0;
 }
@@ -64,16 +64,18 @@ h2 {
 
 #header {
     nav {
-        .offcanvas{
+        .offcanvas {
             background-color: $c2;
         }
-        .offcanvas-title{
+
+        .offcanvas-title {
             font-size: 2em;
             font-family: $font-logo;
             color: $c3;
         }
-        .offcanvas-footer{
-            
+
+        .offcanvas-footer {
+
             img {
                 width: 15.64vw;
                 height: calc(15.64vw*0.75);
@@ -81,26 +83,28 @@ h2 {
                 margin-bottom: 2.4%;
             }
         }
+
         button {
             border-style: none;
-            
+
             &:focus {
                 box-shadow: none;
             }
         }
+
         // #hero {
-            //     //agregado margin y padding top de misma altura que nav para suplir el fixed-top
-            //     //el margin representa el tamaño de la letra que es variable
-            //     margin-top: 1.875em;
-            //     // el padding representa el tamaño fijo total de padding vertical que agrega bootstrap
-            //     padding-top: 2rem;
-            // }
-        }
+        //     //agregado margin y padding top de misma altura que nav para suplir el fixed-top
+        //     //el margin representa el tamaño de la letra que es variable
+        //     margin-top: 1.875em;
+        //     // el padding representa el tamaño fijo total de padding vertical que agrega bootstrap
+        //     padding-top: 2rem;
+        // }
+    }
 }
 
 #about {
     margin: 4.4%;
-    
+
     h2 {
         color: $c3;
         margin-bottom: 5%;
@@ -110,14 +114,14 @@ h2 {
         font-style: italic;
         font-weight: bold;
     }
-    
+
     img {
         border-radius: 2px;
         width: 34vw;
         height: calc(34vw*1.33);
         margin-left: 4%;
     }
-    
+
     p {
         font-size: 0.625em;
         color: black;
@@ -127,7 +131,7 @@ h2 {
 #products {
     background-color: $c3;
     padding: 4.4% 4%;
-    
+
     a {
         text-decoration: none;
     }
@@ -137,13 +141,47 @@ h2 {
         padding-left: 12px;
         margin-bottom: 0;
     }
-    
+
+    .modal-header {
+        background-color: $c1;
+    }
+
+    .modal-body {
+        background-color: $c1;
+    }
+
+    .modal-detalles {
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            text-transform: capitalize;
+            padding-left: 0;
+            color: $c3;
+        }
+
+        button {
+            align-self: center;
+            border-style: none;
+            border-radius: 5px;
+            color: $c1;
+            background-color: $c4;
+            padding: 1% 3%;
+            margin: 4% 0;
+        }
+
+        p {
+            font-size: .6em;
+        }
+    }
+
     .card {
         background-color: transparent;
         border-style: none;
         color: $c1;
         text-align: center;
-        
+
         .card-body {
             padding-right: 0;
             padding-left: 0;
@@ -155,41 +193,39 @@ h2 {
             margin-bottom: 0;
             width: auto;
         }
-        
+
         img {
             border-radius: 2px;
         }
-        
+
         .btnVerMas {
             background-color: transparent;
             color: $c1;
+            padding: 3% 5%;
             border: 1px solid $c1;
             border-radius: 5px;
             font-size: 0.5em;
-            
-            p {
-                margin-bottom: 0;
-            }
         }
     }
 }
 
+
 #footer {
     background-color: $c3;
-    
+
     img {
         width: 15.64vw;
         height: calc(15.64vw*0.75);
         margin-top: 2.3%;
         margin-bottom: 2.4%;
     }
-    
+
     p {
         color: $c1;
         font-size: 0.625em;
         margin-bottom: 3%;
         font-family: 'Chathura', sans-serif;
-        
+
         a {
             color: $c1;
             text-decoration: none;
@@ -229,10 +265,10 @@ h2 {
 
 }
 
-#toTop{
+#toTop {
     background-color: $c5;
     font-size: .5em;
-    border-radius: 2px;
+    border-radius: 8%;
     text-align: center;
     border: 2px solid $c2;
     color: $c1;
@@ -294,18 +330,23 @@ h2 {
         .tabs {
             display: flex;
             flex-direction: row;
-            ul{
+
+            ul {
                 padding-left: 0;
             }
+
             li {
                 font-size: .5em;
-                a{
+
+                a {
                     text-decoration: none;
-                    color:$c4;
+                    color: $c4;
                 }
-                span{
-                    color:$c4;
+
+                span {
+                    color: $c4;
                 }
+
                 list-style: none;
             }
         }
