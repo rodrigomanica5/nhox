@@ -3,9 +3,9 @@ const products = [{
     name: "bolso cool lady",
     img: "./assets/img/home_cool_lady.jpg",
     carrImg:"assets/img/Carr_cool_lady",
-    color: "rosa",
-    description:"Acceso cierre metálico. Contiene un bolsillo externo y un bolsillo interno.",
-    size: "Altura 36cm, Ancho 32cm, Profunidad 12,5cm",
+    color: "nude",
+    description:"Acceso cierre metálico. Contiene un bolsillo interno con cierre.",
+    size: "Altura 25cm, Ancho 40cm, Profunidad 12cm",
     materials: "Cuero sintético Charol"
   },
   {
@@ -13,7 +13,7 @@ const products = [{
     name: "mochila babe rose",
     img: "./assets/img/home_rose_babe.jpg",
     carrImg:"assets/img/Carr_babe_rose",
-    color: "rosa",
+    color: "nude",
     description:"Acceso cierre metálico. Contiene un bolsillo externo y un bolsillo interno.",
     size: "Altura 36cm, Ancho 32cm, Profunidad 12,5cm",
     materials: "Cuero sintético Charol"
@@ -23,50 +23,50 @@ const products = [{
     name: "mochila cleo",
     img: "./assets/img/home_cleo.jpg",
     carrImg:"assets/img/Carr_cleo",
-    color: "celeste y rosa",
+    color: "celeste y nude",
     description:"Acceso cierre metálico. Contiene un bolsillo externo y un bolsillo interno.",
     size: "Altura 36cm, Ancho 32cm, Profunidad 12,5cm",
-    materials: "Cuero sintético Charol"
+    materials: "PU gamuzado y Cuero sintético charol"
   },
   {
     id:"4",
     name: "mochila tender black",
     img: "./assets/img/home_tender_black.jpg",
     carrImg:"assets/img/Carr_tender_black",
-    color: "negro",
+    color: "black",
     description:"Acceso cierre metálico. Contiene un bolsillo externo y un bolsillo interno.",
     size: "Altura 36cm, Ancho 32cm, Profunidad 12,5cm",
-    materials: "Cuero sintético Charol"
+    materials: "Cuero sintético"
   },
   {
     id:"5",
     name: "mochila cobra red",
     img: "./assets/img/home_cobra_red.jpg",
     carrImg:"assets/img/Carr_cobra_red",
-    color: "rojo",
+    color: "red",
     description:"Acceso cierre metálico. Contiene un bolsillo externo y un bolsillo interno.",
     size: "Altura 36cm, Ancho 32cm, Profunidad 12,5cm",
-    materials: "Cuero sintético Charol"
+    materials: "Cuero sintético croco"
   },
   {
     id:"6",
     name: "mochila cobra green",
     img: "./assets/img/home_cobra_green.jpg",
     carrImg:"assets/img/Carr_cobra_green",
-    color: "verde",
+    color: "green",
     description:"Acceso cierre metálico. Contiene un bolsillo externo y un bolsillo interno.",
     size: "Altura 36cm, Ancho 32cm, Profunidad 12,5cm",
-    materials: "Cuero sintético Charol"
+    materials: "Cuero sintético croco"
   },
   {
     id:"7",
     name: "mochila wheel black",
     img: "./assets/img/home_wheel_black.jpg",
     carrImg:"assets/img/Carr_wheel_black",
-    color: "negro",
+    color: "black",
     description:"Acceso cierre metálico. Contiene un bolsillo externo y un bolsillo interno.",
     size: "Altura 36cm, Ancho 32cm, Profunidad 12,5cm",
-    materials: "Cuero sintético Charol"
+    materials: "Cuero sintético"
   },
   {
     id:"8",

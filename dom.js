@@ -104,7 +104,7 @@ let footer = document.getElementById("footer");
 footer.innerHTML = `
     <div class="d-flex flex-column align-items-center">
         <img src="./assets/img/nhoxblanco.png" alt="Logo Nhox">
-        <p><a href="#">INSTAGRAM</a> | <a href="mailto:nhoxbags@outlook.com.ar">NHOXBAGS@OUTLOOK.COM.AR</a></p>
+        <p><a href="https://www.instagram.com/nhoxbags/">INSTAGRAM</a> | <a href="mailto:nhoxbags@outlook.com.ar">NHOXBAGS@OUTLOOK.COM.AR</a></p>
     </div>
 `;
 const toTopButton = document.getElementById("toTop");
