@@ -90,7 +90,7 @@ const setCards = () => {
     cardCreate.classList.add("col");
     cardCreate.innerHTML = `
       <div class="card align-items-center">
-        <img src="${p.img}" class="card-img-top" alt="img">
+        <img src="${p.img}" class="card-img-top" alt="img" data-bs-toggle="modal" data-bs-target="#Modal${p.id}">
         <div class="card-body pb-0">
           <h5 class="card-title">${p.name}</h5>
           <button class="btnVerMas mx-auto" data-bs-toggle="modal" data-bs-target="#Modal${p.id}">ver más</button>

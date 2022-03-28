@@ -190,6 +190,7 @@ h2 {
 
 #products .card img {
   border-radius: 2px;
+  cursor: pointer;
 }
 
 #products .card .btnVerMas {
