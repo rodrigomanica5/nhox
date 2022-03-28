@@ -1,10 +1,11 @@
 let header = document.getElementById("header");
 header.innerHTML = `
     <nav class="navbar sticky-top navbar-expand-xxl navbar-light bg-light">
-            <button class="navbar-toggler ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar">
+            <button class="navbar-toggler ms-3" type="button" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar" id="OpenMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <a class="navbar-brand ms-3" href="#"><h1>NHOX</h1></a>
             <ul class="tabs">
                 <li class="d-flex align-items-center">
@@ -17,9 +18,9 @@ header.innerHTML = `
                     <a class="nav-link" href="#contact">CONTACTO</a>
                 </li>
             </ul>
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <h1 class="offcanvas-title" id="offcanvasNavbarLabel">NHOX</h1>
+                    <h1 class="offcanvas-title" id="offcanvasExampleLabel">NHOX</h1>
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
