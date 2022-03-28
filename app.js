@@ -86,7 +86,6 @@ const setCards = () => {
   main.innerHTML = "";
   products.forEach((p) => {
     const joinedName = p.name.split(' ').join('%20')
-    console.log(joinedName)
     const cardCreate = document.createElement("div");
     cardCreate.classList.add("col");
     cardCreate.innerHTML = `

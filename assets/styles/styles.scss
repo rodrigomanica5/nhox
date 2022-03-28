@@ -1,5 +1,4 @@
-$font-body: 'Creato Display',
-sans-serif;
+$font-body: 'Lato', sans-serif;
 $font-logo: 'Century Schoolbook',
 sans-serif;
 $font-footer:'Chathura',
@@ -31,7 +30,7 @@ body {
 
     background-color: $c1;
     font-family: $font-body;
-    font-weight: 100;
+    font-weight: 300;
 
     p {
         margin: 0;
@@ -91,14 +90,6 @@ h2 {
                 box-shadow: none;
             }
         }
-
-        // #hero {
-        //     //agregado margin y padding top de misma altura que nav para suplir el fixed-top
-        //     //el margin representa el tamaño de la letra que es variable
-        //     margin-top: 1.875em;
-        //     // el padding representa el tamaño fijo total de padding vertical que agrega bootstrap
-        //     padding-top: 2rem;
-        // }
     }
 }
 
@@ -203,6 +194,7 @@ h2 {
             font-size: 0.6em;
             margin-bottom: 0;
             width: auto;
+            font-weight: 300;
         }
 
         img {
@@ -216,6 +208,7 @@ h2 {
             border: 1px solid $c1;
             border-radius: 5px;
             font-size: 0.5em;
+            font-weight: 300;
         }
     }
 }
@@ -272,6 +265,7 @@ h2 {
         background-color: $c4;
         color: $c1;
         font-size: 0.625em;
+        font-weight: 300;
     }
 
 }
